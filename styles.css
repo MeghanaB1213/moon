@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0,0,0);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    height: 70px;
+}
+#search{
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 80%;
+    background: #f1f1f1;
+}
+#searchbtn {
+    width: 20%;
+    padding: 10px;
+    background:#04AA6D;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  #searchbar{
+    display: flex;
+  }
+.logo>a>img{
+    margin-top: 100px;
+    width: 15vw;
+    height: 20vh;
+    padding: 10px 10px;
+    margin-left: 130px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    color: #17a16a;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: #111;
+    padding:10px 15rem;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #f0a500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d08000;
+}
+
+/* About Section */
+.about {
+    padding: 100px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    padding: 30px;
+    background-color: #444;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 1em;
+    color: #bbb;
+}
